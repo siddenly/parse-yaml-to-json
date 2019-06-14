@@ -1,5 +1,7 @@
 受the-super-tiny-compiler启发,仅供学习编译
+
 只支持部分yaml语法
+
 解析步骤:
 1.使用正则将yaml字符转解析为tokens, token分为九类:arraySymbol、indent、name、space、bool、null、undefined、float、int、string
 2.遍历tokens,转为结构清晰的ast
