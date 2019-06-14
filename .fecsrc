@@ -1,0 +1,9 @@
+files:
+    - src
+eslint:
+    env:
+        es6: true
+    rules:
+        fecs-no-require: -1
+        fecs-valid-jsdoc: -1 
+        no-undef: -1

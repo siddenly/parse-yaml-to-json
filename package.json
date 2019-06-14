@@ -1,0 +1,32 @@
+{
+  "name": "compiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "compiler.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "start": "node src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-pipeline-operator": "^7.3.2",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "jest": "^24.8.0",
+    "remove-trailing-spaces": "^1.0.7"
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/node_modules/regenerator-runtime/runtime"
+    ],
+    "testMatch": [
+      "**/__tests__/**/?(*.)+(test).js?(x)"
+    ]
+  },
+  "devDependencies": {
+    "babel-jest": "^24.8.0",
+    "regenerator-runtime": "^0.13.2"
+  }
+}
